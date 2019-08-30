@@ -126,26 +126,37 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-header nav {
-  height: 50px;
+nav {
+  height: 100px;
+  width: 100vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
 }
-header nav a {
+nav h1 {
+  width: 18%;
+  font-size: 28pt;
+  font-family: indie flower, "sans-serif";
+  margin-top: 4%;
+  margin-right: 30%;
   display: flex;
-  width: 8%;
-  height: inherit;
-  text-decoration: none;
-  font-family: Roboto, 'sans-serif';
-  align-items: center;
 }
-header nav a:hover {
+nav a {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  text-decoration: none;
+  font-family: Roboto, "sans-serif";
+  align-items: center;
+  justify-content: flex-end;
+}
+nav a:hover {
   color: white;
   background-color: black;
 }
-header nav a h2 {
-  margin-left: 5px;
+nav a h2 {
+  margin-top: 5%;
+  padding-left: 5%;
 }
 .footer {
   width: 100%;
