@@ -1,1 +1,32 @@
 // Mixins in here
+
+
+.page-set(@width, @height) {
+display: flex;
+flex-flow: row wrap;
+box-sizing: border-box;
+width: 100%;
+height: 100vh;
+font-family: @font-stack;
+
+@media @tablet {
+    @width: 800px;
+    @height: 1024px;
+}
+
+@media @mobile {
+    @width: 375 px;
+    @height: 700px;
+}
+}
+
+.debug-borderI() {
+border: 1px solid blue;
+
+&:hover {
+border: 1px solid red;
+}
+
+
+}
+
