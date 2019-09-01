@@ -170,9 +170,19 @@ nav a h2 {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .header img {
+.home .page-set(1500px, 900px) .header img {
   align-self: center;
   width: 75%;
+  height: auto;
+  margin-top: 5%;
+}
+.home header {
+  display: flex;
+  flex-flow: row wrap;
+}
+.home header img {
+  width: 70vw;
+  margin: 0 auto;
 }
 .home .content-section {
   margin: 30px 0;
