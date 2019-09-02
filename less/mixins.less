@@ -1,27 +1,42 @@
 // Mixins in here
 
+// set container size
 
-.page-set(@width: 1200px, @height: auto) {
-display: flex;
-flex-flow: row wrap;
-box-sizing: border-box;
-width: @width;
-height: @height;
-font-family: @font-stack;
-
+.container-size-desk()  {
+    width: 100%; 
+    display: flex;
+    flex-flow: row wrap;
 } 
 
-.debug-border() {
+.container-size-tablet()  {
+width: 800px;
+display: flex;
+flex-flow: row wrap;
+
+}
+
+.container-size-mobile()  {
+    width: 500px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+// tests flex functionality
+
+.debug-border()   {
 border: 1px solid blue;
 
 &:hover {
 border: 1px solid red;
 
 }
+
+// Sign-up button styling
+
+.sign-up-btn(@button-bg: #a7d3d3; @border-radius: border-radius; @width: 200px) {
+    background-color: @button-bg;
+    border-radius: 10px;
+    width: @width;
 }
-
-.sign-up-btn() {
-background-color: @button-bg;
-border-radius: 10px;
-
 }
