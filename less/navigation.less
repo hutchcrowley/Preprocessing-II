@@ -2,28 +2,33 @@
 
 nav {
   height: 100px;
-  width: 100%;
+  width: inherit;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   border-bottom: 2px dashed @silver;
+  margin-right: 12%;
+  margin-left: 12%;
+
 
   h1 {
 
-    width: 18%;
+    width: 162px;
     font-size: 28pt;
     font-family: indie flower, "sans-serif";
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 30%;
+    margin-right: 45%;
     display: flex;
+    white-space: nowrap;
     align-self: center;
+
 
   }
 
   a {
     display: flex;
-    width: 11%;
+    width: 30%;
     height: 100%;
     text-decoration: none;
     font-family: Roboto, "sans-serif";
@@ -37,7 +42,6 @@ nav {
 
     h2 {
       margin-top: 5%;
-      margin-right: 20%;
     }
   }
 }
