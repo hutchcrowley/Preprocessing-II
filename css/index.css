@@ -126,41 +126,85 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 nav {
-  height: 100px;
+  height: 110px;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
   border-bottom: 2px dashed #C0C0C0;
-  margin-right: 10%;
-  margin-left: 10%;
+  padding-right: 12%;
 }
 nav h1 {
   width: 162px;
-  font-size: 28pt;
-  font-family: indie flower, "sans-serif";
+  font-size: 29pt;
+  font-family: indie flower, 'sans-serif';
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 45%;
+  margin-right: 28%;
   display: flex;
   white-space: nowrap;
   align-self: center;
 }
 nav a {
   display: flex;
-  width: 10%;
+  width: 11%;
   height: 100%;
+  font-family: Roboto, 'sans-serif';
+  font-size: 12px;
   text-decoration: none;
-  font-family: Roboto, "sans-serif";
   align-items: center;
   justify-content: flex-start;
+  white-space: nowrap;
 }
 nav a:hover {
   color: white;
   background-color: black;
 }
-nav a h2 {
-  margin-top: 5%;
+nav h2 {
+  font-family: Roboto, 'sans-serif';
 }
 .footer {
   width: 100%;
@@ -173,97 +217,100 @@ nav a h2 {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home {
+.container-home {
   display: flex;
   flex-flow: row wrap;
-  width: 1200px;
-  height: auto;
-}
-@media ˜'(max-width: 500px)' {
-  .home {
-    width: 800px;
-    display: flex;
-    flex-flow: row wrap;
-  }
+  width: 1000px;
+  height: 1300px;
+  margin-left: 1%;
+  margin-right: 8%;
+  justify-content: center;
 }
 @media ˜'(max-width: 800px)' {
-  .home {
-    width: 500px;
-    display: flex;
-    flex-flow: column wrap;
+  .container-home {
+    width: 800px;
   }
 }
-.home header {
-  width: 100%;
+.container-home header {
   display: flex;
   flex-flow: row wrap;
+  width: 76%;
   justify-content: left;
-  height: 33%;
-  margin-bottom: 1%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-bottom: 3%;
+  margin-left: inherit;
+  margin-right: inherit;
+  border-bottom: 2px dashed #C0C0C0;
 }
-.home header .fun-bus-img {
-  width: 100%;
-  margin-left: 20%;
-  height: 240px;
-  margin-bottom: 2%;
-}
-.home header h2 {
+.container-home h2 {
   width: 50%;
   height: 24px;
   font-family: indie flower, "sans-serif";
   font-size: 24pt;
   margin-bottom: 2%;
 }
-.home header p {
+.container-home .fun-bus-img {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.container-home h3 {
+  width: 15%;
+  height: 24px;
+  font-family: roboto, "sans-serif";
+  font-size: 14pt;
+  margin-bottom: 2%;
+}
+.container-home p {
   font-family: roboto, "sans-serif";
   font-size: 13pt;
   line-height: 25px;
+  margin-bottom: 2%;
 }
-.home .content-section {
-  margin: 30px 0;
+.content-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  width: inherit;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: left;
+  margin-bottom: 3%;
 }
-.home .content-section .text-content {
+.content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+.content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+.content-section .img-content img {
   border-radius: 10px;
 }
-.home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
