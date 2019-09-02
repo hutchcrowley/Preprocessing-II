@@ -144,14 +144,19 @@ nav h1 {
   display: flex;
   align-self: center;
 }
+@media ˜'( max-width: 500px)' {
+  nav h1 {
+    width: 100%;
+  }
+}
 nav a {
   display: flex;
-  width: 10%;
+  width: 11%;
   height: 100%;
   text-decoration: none;
   font-family: Roboto, "sans-serif";
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 nav a:hover {
   color: white;
@@ -176,32 +181,46 @@ nav a h2 {
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
+  width: 1500px;
+  height: 1200px;
   font-family: Arial, 'sans-serif';
+}
+@media ˜'( max-width: 800px)' {
+  .home {
+    width: 800px;
+    height: auto;
+  }
+}
+@media ˜'( max-width: 500px)' {
+  .home {
+    width: 500px;
+    height: auto;
+  }
 }
 .home header {
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
-  height: 40%;
+  height: 33%;
   margin-bottom: 1%;
+  margin-left: 13vw;
+  margin-right: 13vw;
 }
 .home header .fun-bus-img {
-  width: 746px;
+  width: 65vw;
   height: 240px;
-  justify-self: center;
+  margin-left: 5%;
 }
 .home header h2 {
-  width: 100%;
+  width: 50%;
+  height: 24px;
   font-family: indie flower, 'sans-serif';
   font-size: 24pt;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-left: 6%;
 }
 .home header p {
   font-family: roboto, 'sans-serif';
+  line-height: 20px;
+  margin-right: 38%;
 }
 .home .content-section {
   margin: 30px 0;

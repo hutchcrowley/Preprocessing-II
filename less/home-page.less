@@ -1,38 +1,46 @@
 .home {
 .page-set(1500px, 1200px);
 
+@media @tablet {
+width: 800px;
+height: auto;
+}
+
+@media @mobile {
+width: 500px;
+height: auto;
+}
 
 header {
 
 display: flex;
 flex-flow: row wrap;
 justify-content: left;
-height: 40%;
+height: 33%;
 margin-bottom: 1%;
+margin-left: 13vw;
+margin-right: 13vw;
 
 
-.fun-bus-img {  
-
-width: 746px;
+.fun-bus-img {
+ 
+width: 65vw;
 height: 240px;
-// margin-left: 25%;
-justify-self: center;
+margin-left: 5%;
 }
 
 h2 {
-
-width:100%;
+width: 50%;
+height: 24px;
 font-family: indie flower, 'sans-serif';
 font-size: 24pt;
-margin-left: 2%;
-margin-right: 2%;
-margin-left: 6%;
+
 }
 
 p {
-
   font-family: roboto, 'sans-serif';
-  
+  line-height: 20px;
+  margin-right: 38%;
 }
 
 }
