@@ -144,11 +144,6 @@ nav h1 {
   display: flex;
   align-self: center;
 }
-@media ˜'( max-width: 500px)' {
-  nav h1 {
-    width: 100%;
-  }
-}
 nav a {
   display: flex;
   width: 11%;
