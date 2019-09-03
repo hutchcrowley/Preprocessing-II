@@ -173,27 +173,28 @@ nav {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   border-bottom: 2px dashed #C0C0C0;
-  padding-right: 12%;
+  margin-left: inherit;
+  margin-right: inherit;
 }
 nav h1 {
   width: 162px;
   font-size: 29pt;
-  font-family: indie flower, 'sans-serif';
+  font-family: indie flower, "sans-serif";
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 28%;
+  margin-right: 30%;
   display: flex;
   white-space: nowrap;
   align-self: center;
 }
 nav a {
   display: flex;
-  width: 11%;
+  width: 7%;
   height: 100%;
-  font-family: Roboto, 'sans-serif';
-  font-size: 12px;
+  font-family: Roboto, "sans-serif";
+  font-size: 11px;
   text-decoration: none;
   align-items: center;
   justify-content: flex-start;
@@ -204,14 +205,25 @@ nav a:hover {
   background-color: black;
 }
 nav h2 {
-  font-family: Roboto, 'sans-serif';
+  font-family: Roboto, "sans-serif";
 }
-.footer {
+nav h3 {
+  width: 15%;
+  height: 24px;
+  font-family: roboto, "sans-serif";
+  font-size: 14pt;
+  margin-bottom: 2%;
+}
+footer {
+  display: flex;
+  flex-flow: row wrap;
   width: 100%;
+  margin-left: 15%;
+  margin-right: 27%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
-.footer p {
+footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
@@ -220,97 +232,97 @@ nav h2 {
 .container-home {
   display: flex;
   flex-flow: row wrap;
-  width: 1000px;
-  height: 1300px;
-  margin-left: 1%;
-  margin-right: 8%;
+  width: 1500px;
+  height: auto;
+  justify-self: center;
   justify-content: center;
-}
-@media ˜'(max-width: 800px)' {
-  .container-home {
-    width: 800px;
-  }
+  margin-left: 15%;
+  margin-right: 27%;
 }
 .container-home header {
   display: flex;
   flex-flow: row wrap;
-  width: 76%;
+  width: 100%;
   justify-content: left;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
   margin-left: inherit;
   margin-right: inherit;
   border-bottom: 2px dashed #C0C0C0;
 }
-.container-home h2 {
+.container-home header h2 {
   width: 50%;
   height: 24px;
   font-family: indie flower, "sans-serif";
   font-size: 24pt;
   margin-bottom: 2%;
 }
-.container-home .fun-bus-img {
+.container-home header .fun-bus-img {
   width: 100%;
-  margin-bottom: 3%;
+  height: 55%;
+  margin-bottom: 1%;
 }
-.container-home h3 {
-  width: 15%;
-  height: 24px;
-  font-family: roboto, "sans-serif";
-  font-size: 14pt;
-  margin-bottom: 2%;
-}
-.container-home p {
+.container-home header p {
   font-family: roboto, "sans-serif";
   font-size: 13pt;
   line-height: 25px;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
-.content-section {
+.container-home .content-section {
   display: flex;
   flex-wrap: wrap;
   width: inherit;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: inherit;
+  margin-right: inherit;
   justify-content: left;
-  margin-bottom: 3%;
 }
-.content-section .text-content {
+.container-home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.content-section .img-content {
+.container-home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.content-section .img-content img {
+.container-home .content-section .img-content img {
   border-radius: 10px;
 }
-.inverse-content {
+.container-home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+  height: 30%;
 }
-.inverse-content .text-content {
+.container-home .inverse-content .text-content {
   padding-left: 1%;
-  padding-right: 0;
 }
-.inverse-content .img-content {
+.container-home .inverse-content .text-content h2 {
+  white-space: nowrap;
+  margin-bottom: 10%;
+  width: 45%;
+}
+.container-home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.content-destination {
-  width: 75%;
+.container-home .content-destination {
+  width: 55%;
   margin: 0 auto 30px;
 }
-.content-destination img {
+.container-home .content-destination img {
   border-radius: 10px;
 }
-.content-pick {
+.container-home .content-destination p {
+  width: inherit;
+}
+.container-home .content-pick {
+  width: inherit;
+  margin-left: 15%;
+  margin-right: 27%;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.content-pick .destination {
-  width: 30%;
+.container-home .content-pick .destination {
+  width: 19%;
   margin-bottom: 30px;
 }
