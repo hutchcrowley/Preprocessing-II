@@ -1,3 +1,6 @@
+:hover {
+  border: 1px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -178,6 +181,11 @@ nav {
   margin-left: inherit;
   margin-right: inherit;
 }
+@media ˜'(max-width: 500px)' {
+  nav {
+    flex-flow: column wrap;
+  }
+}
 nav h1 {
   width: 162px;
   font-size: 29pt;
@@ -239,6 +247,11 @@ footer p {
   margin-left: 15%;
   margin-right: 27%;
 }
+@media ˜'(max-width: 500px)' {
+  .container-home {
+    width: 500px;
+  }
+}
 .container-home header {
   display: flex;
   flex-flow: row wrap;
@@ -249,25 +262,25 @@ footer p {
   margin-right: inherit;
   border-bottom: 2px dashed #C0C0C0;
 }
-.container-home header h2 {
+.container-home h2 {
   width: 50%;
   height: 24px;
   font-family: indie flower, "sans-serif";
   font-size: 24pt;
   margin-bottom: 2%;
 }
-.container-home header .fun-bus-img {
+.container-home .fun-bus-img {
   width: 100%;
   height: 55%;
   margin-bottom: 1%;
 }
-.container-home header p {
+.container-home p {
   font-family: roboto, "sans-serif";
   font-size: 13pt;
   line-height: 25px;
   margin-bottom: 1%;
 }
-.container-home .content-section {
+.content-section {
   display: flex;
   flex-wrap: wrap;
   width: inherit;
@@ -275,45 +288,45 @@ footer p {
   margin-right: inherit;
   justify-content: left;
 }
-.container-home .content-section .text-content {
+.content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.container-home .content-section .img-content {
+.content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.container-home .content-section .img-content img {
+.content-section .img-content img {
   border-radius: 10px;
 }
-.container-home .inverse-content {
+.inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
   height: 30%;
 }
-.container-home .inverse-content .text-content {
+.inverse-content .text-content {
   padding-left: 1%;
 }
-.container-home .inverse-content .text-content h2 {
+.inverse-content .text-content h2 {
   white-space: nowrap;
   margin-bottom: 10%;
   width: 45%;
 }
-.container-home .inverse-content .img-content {
+.inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.container-home .content-destination {
+.content-destination {
   width: 55%;
   margin: 0 auto 30px;
 }
-.container-home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.container-home .content-destination p {
+.content-destination p {
   width: inherit;
 }
-.container-home .content-pick {
+.content-pick {
   width: inherit;
   margin-left: 15%;
   margin-right: 27%;
@@ -322,7 +335,15 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
-.container-home .content-pick .destination {
-  width: 19%;
+.content-pick .destination {
+  width: 30%;
   margin-bottom: 30px;
+}
+.content-pick .destination .btn {
+  display: inline-block;
+  background-color: #17A2B8;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
 }

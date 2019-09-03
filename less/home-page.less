@@ -8,6 +8,15 @@
   margin-left: 15%;
   margin-right: 27%;
 
+
+  @media @mobile{
+
+  width: 500px;
+  
+}
+
+
+
   header {
     display: flex;
     flex-flow: row wrap;
@@ -17,6 +26,10 @@
     margin-left: inherit;
     margin-right: inherit;
     border-bottom: 2px dashed @silver;
+
+  
+
+    }
 
     h2 {
       width: 50%;
@@ -107,8 +120,12 @@
     justify-content: space-between;
 
     .destination {
-      width: 19%;
+      width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .sign-up-btn(@eastern-blue; 10px; 200px; 50px);
+      }
     }
   }
-}
+
