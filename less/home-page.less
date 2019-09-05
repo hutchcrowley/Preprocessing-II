@@ -8,11 +8,18 @@
   margin-left: 15%;
   margin-right: 27%;
 
+@media @tablet{
+  display: flex;
+  flex-flow: column wrap;
+  width: 800px;
+}
+
+
 
   @media @mobile{
-
-  width: 500px;
-  
+    display:flex;
+    flex-flow: column wrap;
+    width: 500px;
 }
 
 
@@ -63,12 +70,11 @@
 
     .text-content {
       width: 48%;
-      padding-right: 1%;
+
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
 
       img {
         border-radius: 10px;
