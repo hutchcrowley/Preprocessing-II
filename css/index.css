@@ -1,6 +1,3 @@
-:hover {
-  border: 1px solid red;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -90,7 +87,7 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -181,9 +178,9 @@ nav {
   margin-left: inherit;
   margin-right: inherit;
 }
-@media ˜'(max-width: 500px)' {
+@media (max-width: 500px) {
   nav {
-    flex-flow: column wrap;
+    background-color: red;
   }
 }
 nav h1 {
@@ -247,8 +244,17 @@ footer p {
   margin-left: 15%;
   margin-right: 27%;
 }
-@media ˜'(max-width: 500px)' {
+@media (max-width: 800px) {
   .container-home {
+    display: flex;
+    flex-flow: column wrap;
+    width: 800px;
+  }
+}
+@media (max-width: 500px) {
+  .container-home {
+    display: flex;
+    flex-flow: column wrap;
     width: 500px;
   }
 }
@@ -290,11 +296,9 @@ footer p {
 }
 .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
 }
 .content-section .img-content {
   width: 48%;
-  padding-left: 1%;
 }
 .content-section .img-content img {
   border-radius: 10px;
