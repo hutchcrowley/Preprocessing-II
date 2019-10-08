@@ -1,21 +1,66 @@
-.home {
+.container-home {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 100px;
+  justify-content: center;
 
+  @media @tablet {
+    display: flex;
+    flex-flow: column wrap;
+    width: 800px;
+  }
+
+  @media @mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 500px;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1%;
+    border-bottom: 2px dashed @silver;
+
+    h2 {
+      width: 50%;
+      height: 24px;
+      font-family: "indie flower", sans-serif;
+      font-size: 24pt;
+      margin-bottom: 2%;
+    }
+
+    .fun-bus-img {
+      width: 85%;
+      height: 55%;
+      margin-bottom: 1%;
+    }
+
+    p {
+      font-family: "roboto", sans-serif;
+      font-size: 13pt;
+      line-height: 25px;
+      margin-bottom: 1%;
+    }
+  }
   .content-section {
-    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    width: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+    justify-content: left;
 
-   
-    
     .text-content {
       width: 48%;
-      padding-right: 1%;
     }
 
     .img-content {
       width: 48%;
-      padding-left: 1%;
 
       img {
         border-radius: 10px;
@@ -29,25 +74,37 @@
 
     .text-content {
       padding-left: 1%;
-      padding-right: 0;
-    }
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
+      h2 {
+        white-space: nowrap;
+        margin-bottom: 10%;
+        width: 45%;
+      }
+
+      .img-content {
+        padding-right: 1%;
+        padding-left: 0;
+      }
     }
   }
 
   .content-destination {
-    width: 75%;
+    width: 55%;
     margin: 0 auto 30px;
 
     img {
       border-radius: 10px;
     }
+
+    p {
+      width: inherit;
+    }
   }
 
   .content-pick {
+    width: inherit;
+    margin-left: 15%;
+    margin-right: 27%;
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
@@ -56,6 +113,12 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        height: 100px;
+        width: 200px;
+        background-color: @button-bg;
+      }
     }
   }
-}// home
+}
