@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -83,12 +83,12 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: 0;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline;
+  max-width: 1000px;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -102,7 +102,7 @@ hgroup,
 menu,
 nav,
 section {
-  display: block;
+  display: inline-block;
 }
 body {
   line-height: 1;
@@ -125,9 +125,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-* {
-  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
@@ -163,73 +160,67 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-nav {
+.container-nav {
+  display: flex;
+  flex-flow: row nowrap;
   height: 110px;
+  width: auto;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
+}
+.container-nav nav {
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  justify-items: center;
   border-bottom: 2px dashed #C0C0C0;
-  margin-left: inherit;
-  margin-right: inherit;
+  align-items: center;
 }
-@media '@media (max-width: 500px)' {
-  nav {
-    background-color: red;
-  }
+@media (max-width: 500px) {
 }
-nav h1 {
-  width: 162px;
-  font-size: 29pt;
-  font-family: indie flower, "sans-serif";
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 30%;
-  display: flex;
-  white-space: nowrap;
-  align-self: center;
-}
-nav a {
-  display: flex;
-  width: 7%;
+.container-nav nav h1 {
   height: 100%;
+  max-width: 900px;
+  font-family: indie flower, "sans-serif";
+  margin-right: 35%;
+  display: flex;
+  justify-items: center;
+  white-space: nowrap;
+}
+.container-nav nav a {
+  display: flex;
+  width: 10%;
+  height: 100%;
+  font-size: 14pt;
   font-family: Roboto, "sans-serif";
-  font-size: 11px;
   text-decoration: none;
   align-items: center;
-  justify-content: flex-start;
+  justify-items: center;
   white-space: nowrap;
 }
-nav a:hover {
+.container-nav nav a:hover {
   color: white;
   background-color: black;
 }
-nav h2 {
-  font-family: Roboto, "sans-serif";
+.container-nav nav h2 {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
-nav h3 {
-  width: 15%;
-  height: 24px;
-  font-family: roboto, "sans-serif";
-  font-size: 14pt;
-  margin-bottom: 2%;
+.container-nav nav h3 {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 footer {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
-  margin-left: 15%;
-  margin-right: 27%;
+  max-width: 900px;
+  margin: 0 auto;
   border-top: 2px dashed silver;
   background: #FFEBCD;
+  justify-items: center;
 }
 footer p {
-  text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
@@ -237,23 +228,22 @@ footer p {
 .container-home {
   display: flex;
   flex-flow: row wrap;
-  max-width: 1500px;
-  height: auto;
+  max-width: 1000px;
+  width: 100%;
+  margin-top: 100px;
   justify-content: center;
-  margin-left: 15%;
-  margin-right: 27%;
 }
-@media '@media (max-width: 800px)' {
+@media (max-width: 800px) {
   .container-home {
     display: flex;
     flex-flow: column wrap;
     width: 800px;
   }
 }
-@media '@media (max-width: 500px)' {
+@media (max-width: 500px) {
   .container-home {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     width: 500px;
   }
 }
@@ -261,26 +251,24 @@ footer p {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  justify-content: left;
+  justify-content: center;
   margin-bottom: 1%;
-  margin-left: inherit;
-  margin-right: inherit;
   border-bottom: 2px dashed #C0C0C0;
 }
-.container-home h2 {
+.container-home header h2 {
   width: 50%;
   height: 24px;
-  font-family: indie flower, "sans-serif";
+  font-family: "indie flower", sans-serif;
   font-size: 24pt;
   margin-bottom: 2%;
 }
-.container-home .fun-bus-img {
-  width: 100%;
+.container-home header .fun-bus-img {
+  width: 85%;
   height: 55%;
   margin-bottom: 1%;
 }
-.container-home p {
-  font-family: roboto, "sans-serif";
+.container-home header p {
+  font-family: "roboto", sans-serif;
   font-size: 13pt;
   line-height: 25px;
   margin-bottom: 1%;
@@ -305,7 +293,6 @@ footer p {
 .container-home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
-  height: 30%;
 }
 .container-home .inverse-content .text-content {
   padding-left: 1%;

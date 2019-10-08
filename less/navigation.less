@@ -1,57 +1,60 @@
 // Navigation Styles here
 
-nav {
-  height: 110px;
-  width: 100%;
+.container-nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
-  border-bottom: 2px dashed @silver;
-  margin-left: inherit;
-  margin-right: inherit;
-
-  @media @mobile {
-background-color: red;
+ height: 110px;
+  width: auto;
+  align-items: center;
+  justify-items: center;
+  position: fixed;
 
 
-  }
-  h1 {
-    width: 162px;
-    font-size: 29pt;
-    font-family: indie flower, "sans-serif";
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 30%;
+  nav {
+    width: 100%;
     display: flex;
-    white-space: nowrap;
-    align-self: center;
-  }
-
-  a {
-    display: flex;
-    width: 7%;
-    height: 100%;
-    font-family: Roboto, "sans-serif";
-    font-size: 11px;
-    text-decoration: none;
+    flex-flow: row nowrap;
+    justify-items: center;
+    border-bottom: 2px dashed @silver;
     align-items: center;
-    justify-content: flex-start;
-    white-space: nowrap;
 
-    &:hover {
-      color: white;
-      background-color: black;
+    @media @mobile {
+      // background-color: red;
     }
-  }
-  h2 {
-    font-family: Roboto, "sans-serif";
-  }
+    h1 {
+      height: 100%;
+      max-width: 900px;
+      font-family: indie flower, "sans-serif";
+      margin-right: 35%;
+      display: flex;
+      justify-items: center;
+      white-space: nowrap;
+    }
 
-  h3 {
-    width: 15%;
-    height: 24px;
-    font-family: roboto, "sans-serif";
-    font-size: 14pt;
-    margin-bottom: 2%;
+    a {
+      display: flex;
+      width: 10%;
+      height: 100%;
+      font-size: 14pt;
+      font-family: Roboto, "sans-serif";
+      text-decoration: none;
+      align-items: center;
+      justify-items: center;
+      white-space: nowrap;
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+    h2 {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    h3 {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+    }
   }
 }
