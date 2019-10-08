@@ -178,7 +178,7 @@ nav {
   margin-left: inherit;
   margin-right: inherit;
 }
-@media (max-width: 500px) {
+@media '@media (max-width: 500px)' {
   nav {
     background-color: red;
   }
@@ -237,21 +237,20 @@ footer p {
 .container-home {
   display: flex;
   flex-flow: row wrap;
-  width: 1500px;
+  max-width: 1500px;
   height: auto;
-  justify-self: center;
   justify-content: center;
   margin-left: 15%;
   margin-right: 27%;
 }
-@media (max-width: 800px) {
+@media '@media (max-width: 800px)' {
   .container-home {
     display: flex;
     flex-flow: column wrap;
     width: 800px;
   }
 }
-@media (max-width: 500px) {
+@media '@media (max-width: 500px)' {
   .container-home {
     display: flex;
     flex-flow: column wrap;
@@ -286,7 +285,7 @@ footer p {
   line-height: 25px;
   margin-bottom: 1%;
 }
-.content-section {
+.container-home .content-section {
   display: flex;
   flex-wrap: wrap;
   width: inherit;
@@ -294,43 +293,43 @@ footer p {
   margin-right: inherit;
   justify-content: left;
 }
-.content-section .text-content {
+.container-home .content-section .text-content {
   width: 48%;
 }
-.content-section .img-content {
+.container-home .content-section .img-content {
   width: 48%;
 }
-.content-section .img-content img {
+.container-home .content-section .img-content img {
   border-radius: 10px;
 }
-.inverse-content {
+.container-home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
   height: 30%;
 }
-.inverse-content .text-content {
+.container-home .inverse-content .text-content {
   padding-left: 1%;
 }
-.inverse-content .text-content h2 {
+.container-home .inverse-content .text-content h2 {
   white-space: nowrap;
   margin-bottom: 10%;
   width: 45%;
 }
-.inverse-content .img-content {
+.container-home .inverse-content .text-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
-.content-destination {
+.container-home .content-destination {
   width: 55%;
   margin: 0 auto 30px;
 }
-.content-destination img {
+.container-home .content-destination img {
   border-radius: 10px;
 }
-.content-destination p {
+.container-home .content-destination p {
   width: inherit;
 }
-.content-pick {
+.container-home .content-pick {
   width: inherit;
   margin-left: 15%;
   margin-right: 27%;
@@ -339,15 +338,12 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
-.content-pick .destination {
+.container-home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
-.content-pick .destination .btn {
-  display: inline-block;
-  background-color: #17A2B8;
-  border-radius: 10px;
+.container-home .content-pick .destination .btn {
+  height: 100px;
   width: 200px;
-  height: 50px;
-  font-size: 2rem;
+  background-color: #17A2B8;
 }

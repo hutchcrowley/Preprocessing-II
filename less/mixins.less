@@ -6,24 +6,13 @@
   justify-items: center;
   align-content: center;
 }
- 
+
 // tests flex functionality
 
-.debug-border()   {
-border: 1px solid blue;
+.debug-border() {
+  border: 1px solid blue;
 
-// &:hover {
-// border: 1px solid red;
-
-// }
-// }
-// Parametric mixin for Sign-up button styling
-
-.sign-up-btn(@button-bg; @border-radius: 10px; @width: 200px; @height: 50px;) {
-  display: inline-block;
-  background-color: @button-bg;
-  border-radius: @border-radius;
-  width: @width;
-  height: @height;
-  font-size: 2rem;
-}}
+  &hover {
+    border: 1px solid red;
+  }
+}
